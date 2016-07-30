@@ -1,0 +1,21 @@
+\section{Introduction}%
+As wireless communication standards evolve, the demand for a digital signal processor (DSP) supplying computation with high performance, high flexibility and low power-dissipation is gaining momentum in the mobile industry. 
+For example, LTE-advance demands 10 times higher transmission throughput than that of LTE~\cite{lte}, 
+and algorithms of LTE-advance could change frequently with protocol specifications.
+%To achieve such enhancement, strategies such as scaling up MIMO system and permitting carrier aggregation~\cite{carrier} that require more sophisticated arithmetics are adopted in LTE-advance.
+%Consequently, both energy efficiency and flexibility become crucial considerations in the filed of digital signal processor design. 
+However, Very Long Instruction Word (VLIW) and Application-Specific Instruction set Processor (ASIP), which have been popular architectures for state-of-the-art DSPs, are considered to be opposite extreme cases by hardware designers who would like to trade-off between flexibility and power-efficiency. 
+VLIW gains good flexibility by allocating each arithmetic unit dedicated control signals and data ports in the register file (RF), which result in severe power dissipation. %so it could work orthogonally with each other.
+On the contrary, ASIP buys the optimized datapath for a specific ISA or algorithm at the expense of flexibility, so good power-efficiency can be achieved. 
+Consequently, improving the power efficiency while keeping the flexibility of a DSP for mobile devices consequently has been a challenge.	
+\\\indent
+To address this issue, 
+we present DeAr, Dual-thread Architecture DSP, with features summarized below: 
+\textbf{(1)} The multi-issue datapath enables Simultaneous Multi-threading (SMT).
+\textbf{(2)} The transport triggered data bus exhaustively forwards data from accumulator latches to ALU.
+\textbf{(3)} Banked organization of the RF eliminates redundant connections from ports to registers.
+\textbf{(4)} RF access is simplified to implicit operations (i.e. push or pop) instead of conventional random access.
+\\\indent
+Besides, we propose a novel program analysis approach based on the hierarchical data flow graph (HDFG), which is an enhanced data flow graph.
+With HDFG-based scheduling, DeAr achieves both high throughput and flexibility, 
+and exploits data forwarding opportunities to reduce power dissipation.

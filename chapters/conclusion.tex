@@ -1,0 +1,18 @@
+\section{Conclusions and Future Work}
+In this work, we propose a high throughput, power-efficient and flexible DSP design, DeAr,
+which is suitable for fast-evolving wireless communication protocols.
+DeAr manipulates SMT in the datapath to improve the hardware utilization, 
+and its compact design reduces the cost of power and area.
+It also features implicit RF access to improve the code density.
+By leveraging the proposed HDFG-based scheduling, 
+DeAr exhaustively forwards data for ALU, 
+and has only 1.11\% (BLAS) and 4.26\% (GDSPK) loss in OPC against VLIW in spite of its hardware simplification,
+With identical ALU, RF resources and the throughput requirement ranging from 50 to 1000 MOPS, DeAr improves 20.3\% to 13.1\% and 31.8\% 2.2\% of power, 36.1\% to 31.5\% and 28.2\% to 5.7\% of area, compared with VLIW and composite-ALU (an ASIP implementation) respectively.
+\\\indent
+Our future work will focus on scaling up DeAr to the many-core architecture facilitating data-intensive computation.
+The scheduling approach in this work is not suitable for massive threads management, 
+which is usually performed dynamically by a dedicated hardware (i.e., warp scheduler in GPU).
+Applying such a thread management unit to DeAr while keeping the hardware simplicity requires more studies.
+
+
+

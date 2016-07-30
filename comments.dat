@@ -1,0 +1,18 @@
+
+****************************************
+Reviewer #1 Comments
+****************************************
+This paper presents a framework for designing an energy-efficient flexible DSP processor. However, it is hard to find why the proposed work contributes such a low energy-efficiency. Authors should provide more conceptual materials that can clearly explain their own contributions.
+
+****************************************
+Reviewer #2 Comments
+****************************************
+This paper presents an architecture for DSP called DeAr and a scheduling algorithm. Since Algorithm 1 is rather complicated to follow in its current form, it would be better to include a practical example for concrete description. In addition, it is recommended to define a figure of merit, e.g., area-time product, to evaluate the architectures in Section IV. Remove all the punctuation marks after ‘Table’. Lastly, in the first sentence of the second paragraph of Section I, ‘as follows’ would be better than ‘below’.
+
+****************************************
+Reviewer #3 Comments
+****************************************
+This paper presents a power-efficient and flexible embedded digital signal processor targeting high-performance wireless communication systems. The proposed processor is based on a simultaneous multi-threading architecture supporting two threads, where the interconnection between functional units are realized as a transport-triggered structure. Even though the contributions of this paper are fair, several things have to be considered for the revision.
+a) The presentation of the microarchitecture of the proposed processor is very poor. The SMT architecture with the bank of the register files and the transport-triggered interconnection are not new at all. The paper needs to explain how such techniques may improve the power efficiency and the flexibility even in a qualitative manner.
+b) This paper presents a new scheduling technique based on the hierarchical data flow graph (HDFG). However, no explanation about how the new scheduling technique improves the performance by utilizing certain architectural features of the proposed processor.
+c) The comparative studies given in Section IV are so superficial, since there is no detailed explanation about how the results are compared and evaluated.
